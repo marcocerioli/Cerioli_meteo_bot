@@ -47,10 +47,10 @@ function outputdomani(data) {
     for (let i = 0; i < data.time.length; i++) {
         const orario = new Date(data.time[i]);
         if (orario.getDate() === adesso.getDate() + 1) {
-            output += `${orario.getHours()}:00 - ${data.temperature[i]}°C\n`;
+            risultato += `${orario.getHours()}:00 - ${data.temperature[i]}°C\n`;
         }
     }
-    return output;
+    return risultato;
 }
 
 function output3(data) {
